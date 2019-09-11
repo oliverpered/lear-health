@@ -105,4 +105,4 @@ class EmergencyContactForm extends Component {
 export default reduxForm({
   form: 'EmergencyContactForm',
   validate
-})(EmergencyContactForm);
+}, null, { })(EmergencyContactForm);

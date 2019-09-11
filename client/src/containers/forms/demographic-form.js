@@ -77,18 +77,6 @@ class DemographicForm extends Component {
         )
     }
 
-    renderDatePicker (props) {
-        return(
-        <DatePicker 
-            hintText={props.label}
-            floatingLabelText={props.label}
-            fullWidth={true}
-            errorText={props.touched && props.error}
-            {...props}
-        />
-        )
-    }
-
 
     render() {
         const { error, handleSubmit, pristine, reset, submitting } = this.props;
@@ -185,4 +173,4 @@ class DemographicForm extends Component {
 export default reduxForm({
     form: 'DemographicForm',
     validate
-})(DemographicForm);
+}, null, { })(DemographicForm);
